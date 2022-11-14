@@ -1,0 +1,155 @@
+
+    @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #147e7a;
+}
+/* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
+[type='text']:focus,
+[type='email']:focus,
+[type='url']:focus,
+[type='password']:focus,
+[type='number']:focus,
+[type='date']:focus,
+[type='search']:focus,
+[type='checkbox']:focus,
+[type='radio']:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+  --tw-ring-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.react-datepicker-wrapper .react-datepicker__input-container input{
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 0px;
+}
+.react-datepicker__day.react-datepicker__day--keyboard-selected {
+  background: none;
+  color: black;
+}
+input:focus, textarea:focus{
+  outline:none !important;
+  outline-offset: 0 !important;
+  --tw-ring-offset-width:none !important;
+}
+
+li:focus-visible{
+  outline: none;
+}
+
+li:hover{
+  cursor: pointer;
+}
+
+.tab-panel--selected { animation-name: tabPanel; animation-duration: 300ms; animation-timing-function: linear; }
+@keyframes tabPanel { from { opacity: 0; } to { opacity: 1; } }
+/* Input style */
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container label {
+  position: absolute;
+  transform-origin: top left;
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.input-container input {
+  transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.imageFifteen{
+ @apply absolute lg:h-[15px] xl:h-[19px] 2xl:h-[22px] 3xl:h-[26px] w-[100%]; 
+}
+.columnmail{
+ @apply 3xl:mt-[10px] lg:mt-[6px] xl:mt-[8px] 2xl:mt-[9px] not-italic text-gray_800 w-[auto]; 
+}
+.rowmail_one{
+ @apply font-medium lg:ml-[14px] xl:ml-[17px] 2xl:ml-[20px] 3xl:ml-[24px] text-black_900 w-[auto]; 
+}
+.Group6357049{
+ @apply absolute bg-teal_600 flex font-medium items-center left-[0] lg:px-[11px] xl:px-[14px] 2xl:px-[16px] 3xl:px-[19px] rounded-radius50 text-white_A700 w-[40px]; 
+}
+.Group6357052{
+ @apply absolute bg-gray_500 flex font-medium items-center xl:px-[11px] 2xl:px-[13px] 3xl:px-[15px] lg:px-[9px] right-[0] rounded-radius50 text-white_A700 w-[40px]; 
+}
+.columnjobid{
+ @apply font-normal not-italic text-black_900 w-[auto]; 
+}
+.Group6356762{
+ @apply font-normal not-italic p-[0] lg:text-[10px] xl:text-[13px] 2xl:text-[15px] 3xl:text-[18px] text-gray_501 w-[100%]; 
+}
+.rowgroup6356899{
+ @apply bg-white_A700 border-bw05 border-gray_401 border-solid font-normal not-italic lg:pl-[11px] xl:pl-[14px] 2xl:pl-[16px] 3xl:pl-[19px] lg:pr-[24px] xl:pr-[31px] 2xl:pr-[35px] 3xl:pr-[42px] xl:py-[11px] 2xl:py-[13px] 3xl:py-[15px] lg:py-[9px] rounded-radius4 text-black_900 w-[157px]; 
+}
+.Group6357042{
+ @apply font-medium p-[0] lg:text-[11px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-black_900 w-[100%]; 
+}
+.columnposted22jan{
+ @apply mt-[1px] not-italic text-bluegray_400 w-[auto]; 
+}
+.rowlightbulb{
+ @apply font-medium lg:mt-[4px] xl:mt-[5px] 2xl:mt-[6px] 3xl:mt-[7px] text-bluegray_400 w-[auto]; 
+}
+.lightbulb{
+ @apply lg:h-[18px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] mb-[1px] lg:w-[17px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px]; 
+}
+.rowgroup216{
+ @apply bg-gray_101 font-normal not-italic pb-[3px] lg:pt-[4px] lg:px-[5px] xl:px-[7px] 2xl:px-[8px] 3xl:px-[9px] rounded-radius12 text-black_900; 
+}
+.Group216{
+ @apply bg-gray_101 font-normal not-italic pb-[3px] lg:pt-[4px] xl:pt-[5px] 2xl:pt-[6px] 3xl:pt-[7px] lg:px-[5px] xl:px-[7px] 2xl:px-[8px] 3xl:px-[9px] rounded-radius12 text-black_900 w-[112px]; 
+}
+.Group219{
+ @apply bg-gray_101 font-normal not-italic pb-[3px] lg:pt-[4px] xl:pt-[6px] 2xl:pt-[7px] 3xl:pt-[8px] lg:px-[5px] xl:px-[7px] 2xl:px-[8px] 3xl:px-[9px] rounded-radius12 text-black_900 w-[85px]; 
+}
+.rowcamera{
+ @apply font-normal xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] mt-[4px] not-italic text-black_900 w-[auto]; 
+}
+.camera{
+ @apply lg:h-[16px] xl:h-[20px] 2xl:h-[23px] 3xl:h-[27px] lg:w-[15px] xl:w-[19px] 2xl:w-[22px] 3xl:w-[26px]; 
+}
+.search{
+ @apply lg:h-[18px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] lg:w-[17px] xl:w-[21px] 2xl:w-[24px] 3xl:w-[28px]; 
+}
+.columntitle{
+ @apply font-poppins not-italic text-bluegray_900 tracking-ls1 w-[auto]; 
+}
+.rowtrailingicon{
+ @apply font-normal not-italic text-black_900 tracking-ls1 w-[auto]; 
+}
+.Experience{
+ @apply font-normal not-italic text-gray_700 w-[auto]; 
+}
+.columngroup6356819{
+ @apply font-normal mt-[2px] not-italic text-gray_800 tracking-ls1 w-[auto]; 
+}
+.Group6356819{
+ @apply font-normal not-italic p-[0] lg:text-[10px] xl:text-[13px] 2xl:text-[15px] 3xl:text-[18px] text-black_900 w-[100%]; 
+}
+.Rectangle1361{
+ @apply 2xl:h-[101px] 3xl:h-[121px] lg:h-[72px] xl:h-[89px] mb-[3px] mr-[1px] rounded-radius4 2xl:w-[100px] 3xl:w-[120px] lg:w-[71px] xl:w-[88px]; 
+}
+.iconactiondel{
+ @apply absolute bottom-[0] lg:h-[22px] xl:h-[27px] 2xl:h-[31px] 3xl:h-[37px] right-[0] lg:w-[21px] xl:w-[26px] 2xl:w-[30px] 3xl:w-[36px]; 
+}
+.columnthree{
+ @apply font-medium mb-[1px] text-white_A700 w-[auto]; 
+}
+.rowellipsenine{
+ @apply font-normal leading-[normal] lg:ml-[12px] xl:ml-[15px] 2xl:ml-[17px] 3xl:ml-[20px] not-italic text-gray_700 w-[89%]; 
+}
+.description5{
+ @apply font-normal leading-[normal] lg:mt-[4px] xl:mt-[5px] 2xl:mt-[6px] 3xl:mt-[7px] not-italic text-gray_700 w-[100%]; 
+}
+.rowmail{
+ @apply font-normal xl:ml-[10px] 2xl:ml-[12px] 3xl:ml-[14px] lg:ml-[8px] mt-[3px] not-italic text-black_900 w-[auto]; 
+}
